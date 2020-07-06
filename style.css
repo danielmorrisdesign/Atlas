@@ -7,6 +7,8 @@ html {
 	Roboto, 
 	Helvetica Neue, 
 	sans-serif;
+
+	font-size: 16px;
   
 	/* Make type rendering look crisper */
 	-webkit-font-smoothing: antialiased;
@@ -19,21 +21,28 @@ html {
 	text-rendering: optimizeLegibility;
   }
   
-  /**
-   * Form elements render using OS defaults,
-   * so font-family inheritance must be specifically declared
-   */
-  button,
-  input,
-  optgroup,
-  select,
-  textarea {
-	font-family: inherit;
-  }
+/**
+* Form elements render using OS defaults,
+* so font-family inheritance must be specifically declared
+*/
+button,
+input,
+optgroup,
+select,
+textarea {
+font-family: inherit;
+}
+
+table,
+thead,
+tbody,
+tr,
+td {
+	vertical-align: top;
+}
 
 body {
 	overflow-y: hidden;
-	font-size: 16px;
 	line-height: 1.5rem;
 }
 
@@ -338,12 +347,85 @@ li.sidebar-item:hover {
 .table-row {
 	display: table-row;
 	margin-top: 1.5rem;
+	box-shadow: inset 0px -1px 0px 0px hsla(0, 0%, 0%, 0.08);
+}
 
+.table-row:last-child {
+	box-shadow: none;
 }
 
 .table-cell {
 	display: table-cell;
 	padding: 1.5rem 0;
-	box-shadow: 
-	inset 0px -1px 0px 0px hsla(0, 0%, 0%, 0.08);
+}
+
+
+
+.visual-spacing-xxs,
+.visual-spacing-xs,
+.visual-spacing-sm,
+.visual-spacing-md,
+.visual-spacing-lg,
+.visual-spacing-xl,
+.visual-spacing-xxl,
+.visual-spacing-xxxl {
+	display: inline-table;
+	vertical-align: middle;
+	background-color: hsla(229, 79%, 52%, 1);
+}
+
+.visual-spacing-xxs {
+	width: 0.25rem;
+	height: 0.25rem;
+	background-color: hsla(229, 79%, 52%, 1);
+}
+
+.visual-spacing-xs {
+	width: 0.5rem;
+	height: 0.5rem;
+	background-color: hsla(229, 79%, 52%, 1);
+}
+
+.visual-spacing-sm {
+	width: 0.75rem;
+	height: 0.75rem;
+}
+
+.visual-spacing-md {
+	width: 1rem;
+	height: 1rem;
+}
+
+.visual-spacing-lg {
+	width: 1.5rem;
+	height: 1.5rem;
+}
+
+.visual-spacing-xl {
+	width: 2rem;
+	height: 2rem;
+}
+
+.visual-spacing-xxl {
+	width: 3rem;
+	height: 3rem;
+}
+
+.visual-spacing-xxxl {
+	width: 4rem;
+	height: 4rem;
+}
+
+.fieldset {
+	display: flex;
+}
+
+.input {
+	height: 3rem;
+	width: 50%;
+	padding: 0 1rem;
+	border-radius: 0.5rem;
+	border: none;
+	box-shadow: inset 0px 0px 0px 1px hsla(0, 0%, 0%, 0.08);
+
 }
