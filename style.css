@@ -71,8 +71,14 @@ body {
 	width: fit-content;
 	margin-top: 3rem;
 	padding: 0 1.5rem 1.5rem 1.5rem;
-	border-radius: 12px;
+	border-radius: 0.75rem;
 	background-color: hsla(230, 0%, 100%, 1);
+}
+
+.test-container {
+	width: 400px;
+	height: 200px;
+	margin: 3rem 3rem 0 0;
 }
 
 .level-1 {
@@ -143,10 +149,6 @@ a, a:link, a:visited, a:active {
 	color: hsla(0, 0%, 0%, 0.87);
 }
 
-/* .sidebar a {
-	color: hsla(230, 0%, 100%, 0.96);
-} */
-
 .display-lg {
 	margin-top: 1.5rem;
 	font-size: 3.25rem;
@@ -164,8 +166,8 @@ a, a:link, a:visited, a:active {
 .display-sm {
 	margin-top: 1.5rem;
 	font-size: 1.5rem;
-	line-height: 3rem;
-	font-weight: 800;
+	line-height: 2.25rem;
+	font-weight: 700;
 }
 
 .heading {
@@ -198,23 +200,23 @@ a, a:link, a:visited, a:active {
 }
 
 .text-primary {
-	color: hsla(0, 0%, 0%, 0.87);
+	color: hsla(0, 0%, 0%, 0.84);
 }
 
 .text-secondary {
-	color: hsla(0, 0%, 0%, 0.7);
+	color: hsla(0, 0%, 0%, 0.72);
 }
 
 .text-tertiary {
-	color: hsla(0, 0%, 0%, 0.54);
+	color: hsla(0, 0%, 0%, 0.60);
 }
 
-.text-disabled {
-	color: hsla(0, 0%, 0%, 0.37);
+.text-disabled, ::-webkit-input-placeholder {
+	color: hsla(0, 0%, 0%, 0.36);
 }
 
 .text-primary-inverted {
-	color: hsla(230, 0%, 100%, 0.87);
+	color: hsla(230, 0%, 100%, 0.84);
 }
 
 .text-bold {
@@ -274,7 +276,7 @@ a, a:link, a:visited, a:active {
 	display: flex;
 	flex-direction: column;
 	height: 100vh;
-	width: 25%;
+	width: 12.5%;
 	/* padding: 0.75rem 0; */
 }
 
@@ -299,11 +301,18 @@ li.sidebar-item:hover {
 }
 
 .content {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
 	overflow-y: auto;
-	width: 75%;
+	width: 87.5%;
 	height: calc(100vh - 3rem);
 	padding: 0 3rem 3rem 3rem;
 	margin: 0;
+}
+
+.content-inner {
+	width: 80%;
 }
 
 .colorpalette-container {
@@ -402,8 +411,8 @@ li.sidebar-item:hover {
 }
 
 .visual-spacing-xl {
-	width: 2rem;
-	height: 2rem;
+	width: 2.25rem;
+	height: 2.25rem;
 }
 
 .visual-spacing-xxl {
@@ -412,8 +421,8 @@ li.sidebar-item:hover {
 }
 
 .visual-spacing-xxxl {
-	width: 4rem;
-	height: 4rem;
+	width: 4.5rem;
+	height: 4.5rem;
 }
 
 .fieldset {
